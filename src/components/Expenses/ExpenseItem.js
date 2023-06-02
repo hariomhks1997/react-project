@@ -7,6 +7,12 @@ import Card from '../UI/Card';
 
 
 const ExpenseItem= (props) => {
+  const changehandler=()=>{
+    console.log("click")
+  }
+  const deletehandler=()=>{
+    console.log("delete")
+  }
   
     
     return (
@@ -23,6 +29,8 @@ const ExpenseItem= (props) => {
         title={props.title}
         location={props.location}
         ></ExpenseDetails>
+        <button onClick={changehandler}>Change Title</button>
+        <button onClick={deletehandler}>Delete Expense</button>
         
       </div>
     </Card>
