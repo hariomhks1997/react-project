@@ -2,11 +2,12 @@ import logo from "./logo.svg";
 import "./App.css";
 import Expeneses from "./components/Expenses/Expeneses";
 import React from "react";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 
 const App= () => {
   /*<div className="App">
-      <header className="App-header">
+     /* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -56,17 +57,16 @@ const App= () => {
     },
   ];
 
-  /*return (
+  return (
 <div>
-  <h2>Let's get started!</h2>
-
-      
+  <NewExpense></NewExpense>
         <Expeneses
         item={expenses}
         ></Expeneses>
         
-         </div>)*/
-  return React.createElement(
+         </div>)
+         
+  /*return React.createElement(
     "div",
     {},
     React.createElement(
@@ -74,8 +74,14 @@ const App= () => {
       {},
       "Let's get started!"),
       React.createElement(Expeneses, { item: expenses })
-    
-  );
+      
+  );*/
+  return(
+    <div>
+    <NewExpense></NewExpense>
+    </div>
+  )
+  
 }
 
 export default App;
