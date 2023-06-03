@@ -4,8 +4,7 @@ import Expeneses from "./components/Expenses/Expeneses";
 import React from "react";
 import NewExpense from "./components/NewExpense/NewExpense";
 
-
-const App= () => {
+const App = () => {
   /*<div className="App">
      /* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -56,16 +55,20 @@ const App= () => {
       location: "jaipur",
     },
   ];
+  const addExpenseHandler = (expense) => {
+    const expenseData={
+      ...expense
+    }
+    console.log(expenseData)
+  };
 
   return (
-<div>
-  <NewExpense></NewExpense>
-        <Expeneses
-        item={expenses}
-        ></Expeneses>
-        
-         </div>)
-         
+    <div>
+      <NewExpense onAddExpense={addExpenseHandler}></NewExpense>
+      <Expeneses item={expenses}></Expeneses>
+    </div>
+  );
+
   /*return React.createElement(
     "div",
     {},
@@ -76,8 +79,6 @@ const App= () => {
       React.createElement(Expeneses, { item: expenses })
       
   );*/
-
-  
-}
+};
 
 export default App;
