@@ -76,11 +76,7 @@ const App= () => {
       React.createElement(Expeneses, { item: expenses })
       
   );*/
-  return(
-    <div>
-    <NewExpense></NewExpense>
-    </div>
-  )
+
   
 }
 
