@@ -16,7 +16,7 @@ const Expeneses = (props) => {
       ></ExpensesFilter>
       {props.item.map((expense) => (
         <ExpenseItem
-          key={Math.random()}
+          key={expense.id}
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
