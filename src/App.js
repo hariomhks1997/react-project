@@ -35,6 +35,7 @@ const App = () => {
       location: "jaipur",
     },
   ];
+
   const [expenses, setExpenses] = useState(Dummy_Expenses);
 
   /*<div className="App">
